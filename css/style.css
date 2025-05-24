@@ -1,0 +1,169 @@
+.rose-pale, body{
+    /* background-color: #f5eeee; */
+    background-color: #f2dcdc;
+    color: #eb6390;
+}
+
+/* nav */
+nav{
+    box-shadow: 0px 8px 8px -6px #684e3fc4;
+}
+
+.btn-submit{
+    background-image: linear-gradient(#e0e0e6, #928cbd, #e0e0e6);
+}
+
+/* menu burger responsive*/
+    /* bg-mobile */
+.responsive-bg {
+    /* border: solid 3px #e0e0e6; */
+    background-color: #a8a3ae64;
+    border-radius: 10px;
+  }
+    /* bg-tablet */ 
+@media (min-width: 768px) {
+    .responsive-bg {
+        background-color: transparent;
+        border: none;
+    }
+}
+/* bg-desktop */  
+@media (min-width: 1200px) {
+    .responsive-bg {
+        border: none;
+    }
+}
+/* couleur .nav-link et .nav-link.active */
+a.nav-link {
+    color: #a5b4fd;
+    font-weight: bold;
+}
+li a.nav-link:hover{
+    color: #f591d8;
+    transform: scale(1.1);
+}
+a.nav-link.active {
+    color: #f591d8 !important;
+    text-shadow: 1px 1px 1px #1F2039;
+}
+
+/* ... */
+.titre{
+    color: #a5b4fd;
+}
+.scale:hover{
+    transform: scale(1.05);
+}
+.img-logo{
+    box-shadow: 1px 1px 3px grey;
+}
+.text-logo{
+    text-shadow: 2px 2px 1px grey;
+}
+.nav-item{
+    text-shadow: 1px 1px 1px #1F2039;
+}
+.sticky-bottom{
+    position: sticky;
+    bottom: 0;
+    
+}
+.btn-arrow{
+    background-color: #a5b4fd;
+}
+.container-horaire th, .container-horaire td{
+    color: #0d6dfc;
+}
+table th{
+    border-radius: 10px 10px 0 0;
+}
+.rose-beige{
+    background-color: #f5eeee;
+}
+/* text */
+.text-seance{
+    text-align: justify;
+}
+
+/* font-family baskerville */
+.explora-regular {
+    font-family: "Explora", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* contact */
+    /* btn contact */
+
+    .btn-contact{
+        background-color: #0d6dfc;
+        color: #f591d8;
+    }
+    .btn-contact:hover{
+        border: solid 1px #eb6390;
+    }
+    .btn-map{
+        background-color: none;
+        color: #eb6390;
+        border: solid 1px #eb6390;
+    }
+    .btn-map:hover{
+        background-color: #eb6390;
+        color: white;
+    }
+
+    .card-address{
+        background-color: #eb6390;
+        color: white;
+    }
+
+/* Animation subtile au survol */
+.btn-primary:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Effet "profondeur" pour les cartes */
+.bg-white {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+.timeline-badge {
+    position: absolute;
+    left: -8px;
+    top: 15px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+.timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 30px;
+    bottom: -15px;
+    width: 2px;
+    background: #4a6fa5;
+    opacity: 0.3;
+}

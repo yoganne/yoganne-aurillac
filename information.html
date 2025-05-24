@@ -1,0 +1,383 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Information - Professeur de Yoga | Yog'Anne</title>
+        <meta name="description" content="Découvrez les cours de yoga d'Anne, un professeur de yoga passionné et expérimenté.">
+        <meta property="og:title" content="Yog'Anne - Professeur Yoga">
+        <meta property="og:description" content="Découvrez les cours de yoga d'Anne.">
+
+        <!-- à modifier -->
+        <meta property="og:image" content="https://austinmillergreen.github.io/austin-miller-green.com/images/austin_miller_green_2.webp">
+        <meta property="og:url" content="https://austinmillergreen.github.io/austin-miller-green.com/">
+        <!-- à modifier -->
+
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- font-family baskerville -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Explora&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        
+      <style>
+        /* horaire */
+        .day-header {
+          border-radius: 5px 5px 0 0;
+        }
+        .list-group-item {
+          border-radius: 0 !important;
+          transition: all 0.3s ease;
+        }
+        .list-group-item:hover {
+          background-color: rgba(220, 53, 69, 0.1);
+          transform: translateX(5px);
+        }
+        .card {
+          transition: transform 0.3s ease;
+        }
+        .card:hover {
+          transform: translateY(-5px);
+        }
+        .texte-rose{
+            color: #eb6390;
+        }
+        .bg-rose{
+            background-color: #eb6390;
+        }
+      </style>
+    </head>
+    <body class="libre-baskerville-regular">
+        <div class="container-fluid d-flex flex-column min-vh-100">
+            <div class="row">
+                <header class="ctn-about col-lg-6 d-flex flex-column" id="haut">
+                    <!-- menu navbar -->
+                    <nav class="navbar navbar-expand-md fixed-top" >
+                        <div class="container">
+                            <!-- logo et Marque header-->
+                            <div style="width: 250px; height: 70px;" class="align-self-start">
+                                <a class="navbar-brand d-flex h-100 align-items-center text-white" href="index.html">
+                                    <img class="img-logo scale shadow-md border border-1 border-secondary rounded me-3" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie.jpg" alt="Logo"> <!-- rounded-circle -->
+                                    <p class="text-logo scale my-auto d-lg-block ms-3" style="display: none;">Yog'Anne</p>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column" style="border-color: gray;">
+                                <!-- button menu burger -->
+                                <button class="navbar-toggler align-self-end fs-5 px-2 border border-secondary" data-bs-toggle="collapse"  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style=" color: gray;">                                    
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse responsive-bg" id="navbarNavDropdown">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item mx-3">
+                                            <a href="index.html" class="nav-link scale">Accueil</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a href="pratique.html" class="nav-link scale">Nos Pratiques</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a href="information.html" class="nav-link active scale" aria-current="page">Information</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a href="contact.html" class="nav-link  scale">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>                                  
+                </header>               
+            </div>
+            
+            <!-- Contenu principal -->
+            <main class="row p-md-5 flex-fill" id="work">      
+              <!-- section tarif + horaire -->
+              <div class="container-horaire-tarif container d-flex flex-column justify-content-center mt-5 pt-5">
+                <div class="row">
+                  <!-- horaire -->                         
+                  <!-- <div class="horaire col-lg-5 d-flex flex-column pe-0 px-0  mx-auto" id="horaire">
+                    <table class="container-horaire table table-borderless table-hover">
+                      <div class="titre-section">
+                        <h3 class="text-center">HORAIRES</h3>
+                      </div>
+                      <table class="container-horaire table table-borderless table-striped table-hover table-danger">
+                        <tr>
+                          <th colspan="2">Lundi</th>
+                        </tr>
+                        <tr>
+                          <td style="width: 70;">10:30</td><td class="text-start">Hatha Yoga</td>
+                        </tr>
+                        <tr>
+                          <td style="width: 70;">17:30</td><td class="text-start">Yin Yoga (1 semaine/2)</td>
+                        </tr>
+                      </table>
+                      <table class="container-horaire table table-borderless table-striped table-hover table-danger">
+                        <tr>
+                          <th colspan="2">Mardi</th>
+                        </tr>
+                        <tr>
+                          <td style="width: 70;">17:30</td><td class="text-start">Hatha Yoga</td>
+                        </tr>
+                        <tr>
+                          <td style="width: 70;">19:15</td><td class="text-start">Hatha Yoga</td>
+                        </tr>
+                      </table>
+                      <table class="container-horaire table table-borderless table-striped table-hover table-danger">                                   
+                        <tr>
+                            <th style="width: 70;" colspan="2">Mercredi</th>
+                        </tr> 
+                        <tr>
+                            <td style="width: 70;">17:30</td><td class="text-start">Yin Yoga</td>
+                        </tr>
+                        <tr>
+                          <td style="width: 70;">19:15</td><td class="text-start">Hatha Yoga</td>
+                        </tr>
+                      </table>  
+                      <table class="container-horaire table table-borderless table-striped table-hover table-danger">                                 
+                        <tr>
+                          <th style="width: 70;" colspan="2">Vendredi</th>
+                        </tr> 
+                        <tr>
+                          <td style="width: 70;">17:30</td><td class="text-start">Hatha Yoga</td>
+                        </tr>
+                      </table>                               
+                    </table>
+
+                    <table class="container-horaire table table-borderless table-hover">                             
+                      <table class="container-horaire table table-borderless table-striped table-hover table-success">
+                          
+                          <tr>
+                              <th style="width: 70;" colspan="2">Atelier mensuel</th>
+                          </tr> 
+                          <tr>
+                              <td style="width: 70;"></td><td class="text-start">Sonothérapie et Yin Yoga <em>(date à déterminer)</em></td>
+                          </tr>
+                      </table>
+                      <table class="container-horaire table table-borderless table-striped table-hover table-success">
+                          
+                          <tr>
+                              <th style="width: 70;" colspan="2">Juillet et Août <em >(Cours de yoga en plein air)</em></th>
+                          </tr> 
+                          <tr>
+                              <td style="width: 70;"></td><td class="text-start">
+                              Yin Yoga et Hatha Yoga <em>(date à déterminer)</em></td>
+                          </tr>
+                      </table>
+                    </table>
+                  </div> -->
+                        
+                  <!-- new version horaire -->
+                  <div class="container py-4">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-8">
+                        <div class="card shadow-sm border-0 overflow-hidden">
+                          <div class="card-body p-0">
+                            
+                            <!-- Titre -->
+                            <div class="text-center py-4" style="background-color: #f8f9fa;">
+                              <h3 class="fw-bold mb-0">
+                                <i class="fas fa-calendar-alt me-2 texte-rose"></i>HORAIRES DES COURS
+                              </h3>
+                            </div>
+                            
+                            <!-- Cours Réguliers -->
+                            <div class="row g-0">
+                              <!-- Titre -->
+                              <h4 class="h5 text-center mb-3 mt-3 fw-bold texte-rose">
+                                <i class="fas fa-redo me-2"></i>Cours Réguliers
+                              </h4>
+                              <div class="col-md-6">
+                                <div class="p-3">
+                                  
+                                  <!-- Lundi -->
+                                  <div class="mb-3">
+                                    <div class="day-header bg-rose text-white p-2">
+                                      <h5 class="mb-0 fw-bold">Lundi</h5>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger rounded-pill me-2">10:30</span>
+                                        Hatha Yoga
+                                      </li>
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger rounded-pill me-2">17:30</span>
+                                        Yin Yoga (1 semaine/2)
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  
+                                  <!-- Mardi -->
+                                  <div class="mb-3">
+                                    <div class="day-header bg-rose text-white p-2">
+                                      <h5 class="mb-0 fw-bold">Mardi</h5>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger rounded-pill me-2">17:30</span>
+                                        Hatha Yoga
+                                      </li>
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger rounded-pill me-2">19:15</span>
+                                        Hatha Yoga
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class="col-md-6">
+                                <div class="p-3">
+                                  <!-- Mercredi -->
+                                  <div class="mb-3">
+                                    <div class="day-header bg-rose text-white p-2">
+                                      <h5 class="mb-0 fw-bold">Mercredi</h5>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger rounded-pill me-2">17:30</span>
+                                        Yin Yoga
+                                      </li>
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger rounded-pill me-2">19:15</span>
+                                        Hatha Yoga
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  
+                                  <!-- Vendredi -->
+                                  <div class="mb-3">
+                                    <div class="day-header bg-rose text-white p-2">
+                                      <h5 class="mb-0 fw-bold">Vendredi</h5>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger rounded-pill me-2">17:30</span>
+                                        Hatha Yoga
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- Ateliers Spéciaux -->
+                            <div class="border-top pt-3" style="background-color: #f8f9fa;">
+                              <h4 class="h5 text-center mb-3 fw-bold text-success-emphasis">
+                                <i class="fas fa-star me-2"></i>Ateliers Spéciaux
+                              </h4>
+                              
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="card mb-3 ms-md-2 border-success">
+                                    <div class="card-header bg-success-subtle text-success">
+                                      <h5 class="mb-0 fw-bold">Atelier mensuel</h5>
+                                    </div>
+                                    <div class="card-body text-success-emphasis">
+                                      <p class="mb-0">
+                                        <i class="fas fa-music me-2"></i>Sonothérapie et Yin Yoga<br>
+                                        <small class="text-muted">(date à déterminer)</small>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                  <div class="card border-success me-md-2">
+                                    <div class="card-header bg-success-subtle text-success">
+                                      <h5 class="mb-0 fw-bold">Juillet et Août</h5>
+                                    </div>
+                                    <div class="card-body text-success-emphasis">
+                                      <p class="mb-0">
+                                        <i class="fas fa-sun me-2"></i>Cours en plein air<br>
+                                        <small class="text-muted">Yin Yoga et Hatha Yoga (dates à déterminer)</small>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>                                    
+                          </div>
+                        </div>
+                        
+                        <div class="text-center mt-3">
+                          <small class="text-muted">
+                            <i class="fas fa-info-circle me-1"></i>Les horaires sont susceptibles d'être modifiés - Merci de consulter régulièrement les mises à jour
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="container text-center mt-4">
+                    <div class="row px-4 col-lg-5 mx-auto">
+                      <h3 class="text-primary p-4 mb-0 rounded-top-4" style="background-color: #f8f9fa;">TARIF :</h3>
+                      <div class="bg-white">
+                        <div class="PriceByClass p-4">
+                          <p>Cours à l'unité :<span class="prix"> 10€</span></p>
+                          <p>Cours d'essai :<span class="prix"> Gratuit</span></p>
+                        </div>
+                      </div>  
+                      <h4 class="p-4 text-primary mb-0" style="background-color: #f8f9fa;">A LA CARTE :</h4>
+                      <div class="bg-white rounded-bottom-4">
+                        <div class="PriceByClass p-4">
+                          <p>Carte de 10 séances :<span class="prix"> 95€</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              <!-- flêche de retour on top -->
+              <div class="container bouton-revenir-debut sticky-bottom d-flex justify-content-end mb- d-lg-none" >
+                  <a href="#haut" class="btn-arrow rounded text-primary p-2 border border-secondary border-1">
+                      <p class=" mb-0">
+                          <i class="fa-solid fa-arrow-up-long"></i>
+                      </p>
+                  </a>
+              </div>
+            </main>           
+        
+            <footer class="row py-2 rose-beige">
+              <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- les logos footer -->
+                  <div style="width: auto; height: 60px;" >
+                    <a class="d-flex h-100 justify-content-between align-items-center text-white" href="index.html">
+                      <img class="img-logo scale border-secondary rounded" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie.jpg" alt="Logo">
+                    </a>
+                  </div>
+
+                  <div class="d-flex column-gap-3">
+                    <!-- logo instagram -->
+                    <a href="https://www.instagram.com/anneconsigli?igsh=YnVydzA0ZG5qY3ht" target="_blank">
+                      <p class="text-dark m-0 h-100" style="font-size: xx-large;">
+                        <i class="bi bi-instagram"></i>
+                      </p>
+                    </a>
+                    <!-- autre logo -->
+                    <a href="mailto:anne.consigli@orange.fr" target="_blank" class="d-flex align-items-center justify-content-center">
+                      <p class="text-dark m-0 h-100" style="font-size: xx-large;">
+                        <i class="bi bi-envelope-at"></i>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/200ea87a50.js" crossorigin="anonymous"></script>
+        <!-- Ouvrir le modal automatiquement -->
+        <!-- <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            var myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
+            myModal.show();
+          });
+        </script> -->
+    </body>
+</html>
