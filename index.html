@@ -20,6 +20,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Explora&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         
         <style>
+
+            .presentation .bg-primary{
+                background-color: #e8b666 !important;
+            }
             
         </style>
     </head>
@@ -33,7 +37,7 @@
                             <!-- logo et Marque header-->
                             <div style="width: 200px; height: 70px;" class="align-self-start">
                                 <a class="navbar-brand d-flex h-100 align-items-center text-white" href="index.html">
-                                    <img class="img-logo scale border-1 border-secondary rounded me-3" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie.jpg" alt="Logo"> <!-- rounded-circle -->
+                                    <img class="img-logo scale border-1 border-secondary rounded me-3" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie_dore.jpg" alt="Logo"> <!-- rounded-circle -->
                                     <p class="text-logo scale my-auto d-lg-block ms-3" style="display: none;">Yog'Anne</p>
                                 </a>
                             </div>
@@ -64,17 +68,23 @@
                         </div>
                     </nav>
                  
+                    <!-- Photo de présentation smartphone -->
+                    <div class="ctn-img-photographer d-lg-none col-lg-5 mx-auto my-lg-auto mt-5">
+                        <div  class="col-lg-12 mt-5">
+                            <img class="w-100 rounded-3 mt-4" src="images/img_couleur/anne_meditation_portrait.jpg" alt="photo de profil">
+                        </div>
+                    </div>
                     <!-- section à propos -->
-                    <div class="container py-5">
-                        <div class="row justify-content-center mt-5 pt-5">
-                            <!-- bienvenue -->
-                            <!-- <div class="text-center display-5 pb-4 d-lg-none">
-                                <p>"Bienvenue<br>Chez<br>Yog'Anne"</p>
-                            </div> -->
+                    <div class="container presentation text-dore pb-5 py-lg-5">
+                        <div class="row justify-content-center mt-5 pt-lg-5">
                             <div class="col-lg-10 bg-light p-4 rounded-3 shadow-sm">
                                 
                                 <!-- Section Parcours -->
                                 <div class="mb-5">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <!-- <span style="width: 74px;"></span> -->
+                                        <h2 class="text-primary text-center mb-0 fw-bold">Introduction</h2>
+                                    </div>
                                     <div class="d-flex align-items-center mb-4">
                                         <i class="fas fa-user-edit text-primary fs-1 me-4"></i>
                                         <h2 class="text-primary mb-0 fw-bold">Mon Parcours Yogique</h2>
@@ -134,8 +144,8 @@
                                             </div>
                                         </div>
 
-                                        <!-- Photo de profil -->
-                                        <div class="ctn-img-photographer col-lg-5 mx-auto my-lg-auto mt-4">
+                                        <!-- Photo de présentation laptop -->
+                                        <div class="ctn-img-photographer d-none d-lg-block col-lg-5 mx-auto my-lg-auto mt-4">
                                             <div  class="col-lg-12">
                                                 <img class="w-100 rounded-3" src="images/img_couleur/anne_meditation_portrait.jpg" alt="photo de profil">
                                             </div>
@@ -217,7 +227,7 @@
 
             <!-- Modal Annonce (à commenter pour enlever du site) -->
                 
-            <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <!-- <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered ">       
                     <div class="modal-content" style="max-height: 90vh">
                         <div class="modal-header">
@@ -225,11 +235,13 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
                         </div>
                         <div class="modal-body d-flex flex-column justify-content-center align-items-center h-100">
-                            <!-- <img class="w-100 h-100 object-fit-contain" style="max-height: 70vh" src="img/annonce_2024_08_31.jpg" alt="annonce atelier de yoga"> -->
+
+                            <img class="w-100 h-100 object-fit-contain" style="max-height: 70vh" src="img/annonce_2024_08_31.jpg" alt="annonce atelier de yoga">
 
                             <div class="text-center display-6 d-lg-block">
                                 <p class="p-0 my-auto">« Chez Yog'Anne »</p>
                             </div>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
@@ -237,7 +249,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
         
             <footer class="row py-2 rose-beige">
@@ -246,7 +258,7 @@
                         <!-- les logos footer -->
                         <div style="width: auto; height: 60px;" >
                             <a class="d-flex h-100 justify-content-between align-items-center text-white" href="index.html">
-                                <img class="img-logo scale  border-secondary rounded" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie.jpg" alt="Logo">
+                                <img class="img-logo scale  border-secondary rounded" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie_dore.jpg" alt="Logo">
                             </a>
                         </div>
                         <div class="d-flex column-gap-3">

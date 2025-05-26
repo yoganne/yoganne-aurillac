@@ -1,7 +1,10 @@
-.rose-pale, body{
-    /* background-color: #f5eeee; */
-    background-color: #f2dcdc;
-    color: #eb6390;
+.rose-pale, body, .navbar{
+    background-color: #E9E0D2;
+    color: #932d02;
+}
+
+.text-dore .text-primary{
+    color: #e8b666 !important;
 }
 
 /* nav */
@@ -16,7 +19,6 @@ nav{
 /* menu burger responsive*/
     /* bg-mobile */
 .responsive-bg {
-    /* border: solid 3px #e0e0e6; */
     background-color: #a8a3ae64;
     border-radius: 10px;
   }
@@ -78,7 +80,7 @@ table th{
     border-radius: 10px 10px 0 0;
 }
 .rose-beige{
-    background-color: #f5eeee;
+    background-color: #f1eeda;
 }
 /* text */
 .text-seance{
