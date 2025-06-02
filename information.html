@@ -31,7 +31,7 @@
           transition: all 0.3s ease;
         }
         .list-group-item:hover {
-          background-color: rgba(220, 53, 69, 0.1);
+          background-color: #e8b66625;
           transform: translateX(5px);
         }
         .card {
@@ -53,129 +53,57 @@
     </head>
     <body class="libre-baskerville-regular">
         <div class="container-fluid d-flex flex-column min-vh-100">
-            <div class="row">
-                <header class="ctn-about col-lg-6 d-flex flex-column" id="haut">
-                    <!-- menu navbar -->
-                    <nav class="navbar navbar-expand-md fixed-top" >
-                        <div class="container">
-                            <!-- logo et Marque header-->
-                            <div style="width: 200px; height: 70px;" class="align-self-start">
-                                <a class="navbar-brand d-flex h-100 align-items-center text-white" href="index.html">
-                                    <img class="img-logo scale shadow-md border border-1 border-secondary rounded me-3" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie_dore.jpg" alt="Logo"> <!-- rounded-circle -->
-                                    <p class="text-logo scale my-auto d-lg-block ms-3" style="display: none;">Yog'Anne</p>
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column" style="border-color: gray;">
-                                <!-- button menu burger -->
-                                <button class="navbar-toggler align-self-end fs-5 px-2 border border-secondary" data-bs-toggle="collapse"  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style=" color: gray;">                                    
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse responsive-bg" id="navbarNavDropdown">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item mx-3">
-                                            <a href="index.html" class="nav-link scale">Accueil</a>
-                                        </li>
-                                        <li class="nav-item mx-3">
-                                            <a href="pratique.html" class="nav-link scale">Nos Pratiques</a>
-                                        </li>
-                                        <li class="nav-item mx-3">
-                                            <a href="information.html" class="nav-link active scale" aria-current="page">Horaires et Tarifs</a>
-                                        </li>
-                                        <li class="nav-item mx-3">
-                                            <a href="contact.html" class="nav-link  scale">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>                                  
-                </header>               
-            </div>
+          <div class="row">
+            <header class="ctn-about col-lg-6 d-flex flex-column" id="haut">
+              <!-- menu navbar -->
+              <nav class="navbar navbar-expand-md fixed-top" >
+                <div class="container">
+                  <!-- logo et Marque header-->
+                  <div style="width: 200px; height: 70px;" class="align-self-start">
+                    <a class="navbar-brand d-flex h-100 align-items-center text-white" href="index.html">
+                      <img class="img-logo scale shadow-md border border-1 border-secondary rounded me-3" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie_dore.jpg" alt="Logo"> <!-- rounded-circle -->
+                      <p class="text-logo scale my-auto d-lg-block ms-3" style="display: none;">Yog'Anne</p>
+                    </a>
+                  </div>
+                  <!-- Menu -->
+                  <div class="d-flex flex-column" style="border-color: gray;">
+                    <!-- button menu burger -->
+                    <button class="navbar-toggler align-self-end fs-5 px-2 border border-secondary" data-bs-toggle="collapse"  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style=" color: gray;">                                    
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse responsive-bg" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item mx-3">
+                          <a href="index.html" class="nav-link scale">Accueil</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                          <a href="pratique.html" class="nav-link scale">Nos Pratiques</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                          <a href="information.html" class="nav-link active scale" aria-current="page">Horaires et Tarifs</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                          <a href="contact.html" class="nav-link  scale">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>                                  
+            </header>               
+          </div>
             
             <!-- Contenu principal -->
             <main class="row p-md-5 flex-fill" id="work">      
               <!-- section tarif + horaire -->
               <div class="container-horaire-tarif container d-flex flex-column justify-content-center mt-5 pt-5">
                 <div class="row">
-                  <!-- horaire -->                         
-                  <!-- <div class="horaire col-lg-5 d-flex flex-column pe-0 px-0  mx-auto" id="horaire">
-                    <table class="container-horaire table table-borderless table-hover">
-                      <div class="titre-section">
-                        <h3 class="text-center">HORAIRES</h3>
-                      </div>
-                      <table class="container-horaire table table-borderless table-striped table-hover table-danger">
-                        <tr>
-                          <th colspan="2">Lundi</th>
-                        </tr>
-                        <tr>
-                          <td style="width: 70;">10:30</td><td class="text-start">Hatha Yoga</td>
-                        </tr>
-                        <tr>
-                          <td style="width: 70;">17:30</td><td class="text-start">Yin Yoga (1 semaine/2)</td>
-                        </tr>
-                      </table>
-                      <table class="container-horaire table table-borderless table-striped table-hover table-danger">
-                        <tr>
-                          <th colspan="2">Mardi</th>
-                        </tr>
-                        <tr>
-                          <td style="width: 70;">17:30</td><td class="text-start">Hatha Yoga</td>
-                        </tr>
-                        <tr>
-                          <td style="width: 70;">19:15</td><td class="text-start">Hatha Yoga</td>
-                        </tr>
-                      </table>
-                      <table class="container-horaire table table-borderless table-striped table-hover table-danger">                                   
-                        <tr>
-                            <th style="width: 70;" colspan="2">Mercredi</th>
-                        </tr> 
-                        <tr>
-                            <td style="width: 70;">17:30</td><td class="text-start">Yin Yoga</td>
-                        </tr>
-                        <tr>
-                          <td style="width: 70;">19:15</td><td class="text-start">Hatha Yoga</td>
-                        </tr>
-                      </table>  
-                      <table class="container-horaire table table-borderless table-striped table-hover table-danger">                                 
-                        <tr>
-                          <th style="width: 70;" colspan="2">Vendredi</th>
-                        </tr> 
-                        <tr>
-                          <td style="width: 70;">17:30</td><td class="text-start">Hatha Yoga</td>
-                        </tr>
-                      </table>                               
-                    </table>
-
-                    <table class="container-horaire table table-borderless table-hover">                             
-                      <table class="container-horaire table table-borderless table-striped table-hover table-success">
-                          
-                          <tr>
-                              <th style="width: 70;" colspan="2">Atelier mensuel</th>
-                          </tr> 
-                          <tr>
-                              <td style="width: 70;"></td><td class="text-start">Sonothérapie et Yin Yoga <em>(date à déterminer)</em></td>
-                          </tr>
-                      </table>
-                      <table class="container-horaire table table-borderless table-striped table-hover table-success">
-                          
-                          <tr>
-                              <th style="width: 70;" colspan="2">Juillet et Août <em >(Cours de yoga en plein air)</em></th>
-                          </tr> 
-                          <tr>
-                              <td style="width: 70;"></td><td class="text-start">
-                              Yin Yoga et Hatha Yoga <em>(date à déterminer)</em></td>
-                          </tr>
-                      </table>
-                    </table>
-                  </div> -->
-                        
-                  <!-- new version horaire -->
+                  <!-- horaire -->
                   <div class="container py-4">
                     <div class="row justify-content-center">
-                      <div class="col-lg-8">
+                      <div class="col-lg-8 col-10">
                         <div class="card shadow-sm border-0 overflow-hidden">
-                          <div class="card-body p-0">
-                            
+                          <div class="card-body p-0">         
                             <!-- Titre -->
                             <div class="text-center text-dore py-4" style="background-color: #f8f9fa;">
                               <h3 class="fw-bold mb-0">
@@ -301,7 +229,7 @@
                             </div>                                    
                           </div>
                         </div>
-                        
+                        <!-- message muted -->
                         <div class="text-center mt-3">
                           <small class="text-muted">
                             <i class="fas fa-info-circle me-1"></i>Les horaires sont susceptibles d'être modifiés - Merci de consulter régulièrement les mises à jour
@@ -311,34 +239,42 @@
                     </div>
                   </div>
 
-
+                  <!-- Tarif -->
                   <div class="container text-center mt-4">
-                    <div class="row px-4 col-lg-5 mx-auto">
-                      <h3 class="text-primary p-4 mb-0 rounded-top-4" style="background-color: #f8f9fa;">TARIF :</h3>
-                      <div class="bg-white">
-                        <div class="PriceByClass p-4">
-                          <p>Cours à l'unité :<span class="prix"> 10€</span></p>
-                          <p>Cours d'essai :<span class="prix"> Gratuit</span></p>
-                        </div>
-                      </div>  
-                      <h4 class="p-4 text-primary mb-0" style="background-color: #f8f9fa;">A LA CARTE :</h4>
-                      <div class="bg-white rounded-bottom-4">
-                        <div class="PriceByClass p-4">
-                          <p>Carte de 10 séances :<span class="prix"> 95€</span></p>
+                    <div class="row  ">
+                      <div class="col-lg-4 col-10 mx-auto">
+                        <div class="card shadow-sm border-0 overflow-hidden">
+                          <div class="card-body p-0 rounded-4">
+
+                            <h3 class="text-dore p-4 mb-0" style="background-color: #f8f9fa;">TARIF :</h3>
+                            <div class="bg-white">
+                              <div class="PriceByClass p-4">
+                                <p>Cours à l'unité :<span class="prix"> 10€</span></p>
+                                <p>Cours d'essai :<span class="prix"> Gratuit</span></p>
+                              </div>
+                            </div>  
+                            <h4 class="p-4 text-dore mb-0" style="background-color: #f8f9fa;">A LA CARTE :</h4>
+                            <div class="bg-white">
+                              <div class="PriceByClass p-4">
+                                <p>Carte de 10 séances :<span class="prix"> 95€</span></p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
               </div>
                 
-                <div class="container bouton-revenir-debut sticky-bottom d-flex justify-content-end mb-5" >
-                  <a href="#haut" class="btn-arrow rounded text-dore p-2 border bg-rouge-brique bg-white border-1">
-                    <p class=" mb-0">
-                        <i class="fa-solid fa-arrow-up-long"></i>
-                    </p>
-                  </a>
-                </div>
+              <div class="container bouton-revenir-debut sticky-bottom d-flex justify-content-end mb-5" >
+                <a href="#haut" class="btn-arrow rounded text-dore p-2 border bg-rouge-brique bg-white border-1">
+                  <p class=" mb-0">
+                      <i class="fa-solid fa-arrow-up-long"></i>
+                  </p>
+                </a>
+              </div>
             </main>           
         
             <footer class="row py-2 rose-beige">
