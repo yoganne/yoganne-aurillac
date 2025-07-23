@@ -28,12 +28,16 @@
     background-color: #be572a !important;
 }
 
+.bg-rose-pale{
+    background-color: #E9E0D2; 
+}
+
 /* contact */
     /* btn contact */
 
     .btn-contact{
-        background-color: #be572a;
-        color: #e8b666;
+        background-color: #e8b666;
+        color: white;
     }
     .btn-contact:hover{
         border: solid 1px #e8b666;
