@@ -78,71 +78,55 @@
                     </nav>                             
                 </header>
             </div>
-
-            <!-- Modal Annonce (à commenter pour enlever du site) -->    
-            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered ">       
-                    <div class="modal-content" style="max-height: 90vh">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Evénement:</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-                        </div>
-                        <div class="modal-body d-flex flex-column justify-content-center align-items-center h-100">
-                            <img class="w-100 h-100 object-fit-contain" style="max-height: 70vh" src="img/annonce_2024_08_31.jpg" alt="annonce atelier de yoga">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                            <a type="button" class="btn btn-primary" href="#contact">Contacter Moi</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             
             <!-- Contenu principal -->
             <main class="d-flex flex-column justify-content-center flex-fill" id="work">
                 <!-- section contact -->
                 <div class="container-contact container my-5 py-5" id="contact">
+                    <!-- Titre -->
                     <h3 class="py-4 text-center ">ME CONTACTER :</h3>                    
                     <div class="contacte">                       
                         <div class="d-flex flex-column align-items-center">
-                            <div class="mb-4 text-center p-3 rounded-4 card-address" style="box-shadow: 1px 1Px 1Px gray;">
+                            <!-- Adresse -->
+                            <div class="mb-4 text-white text-center p-3 rounded-4 card-address" style="box-shadow: 1px 1Px 1Px gray;">
                                 <p class="me-2 h-100 mb-2" style="font-size: x-large;">
                                     <i class="bi bi-geo-alt"></i>
                                 </p>
-                                <p class="mb-0 text_white"></i>Espace « Couleurs de Soi »</p>
-                                <p class="mb-0 text_white">(Entrée SAUREV)</p>
-                                <p class="mb-0 text_white">salle N°2</p>
-                                <p class="mb-0 text_white">9 bd de Verdun, 15000 AURILLAC</p>
+                                <p class="mb-0"></i>Espace « Couleurs de Soi »</p>
+                                <p class="mb-0">(Entrée SAUREV)</p>
+                                <p class="mb-0">salle N°2</p>
+                                <p class="mb-0">9 bd de Verdun, 15000 AURILLAC</p>
                             </div>
                             
-                                
+                            <!-- Button Mail -->    
                             <a class="btn-contact d-flex justify-content-center align-items-center btn rounded-pill scale my-2" href="mailto:anne.consigli@orange.fr" style="width: 242px;">
                                 <p class="me-2 mb-0" style="font-size: x-large;">
                                     <i class="bi bi-envelope-at-fill"></i>
                                 </p>
                                 <p class="mb-0">Envoyer moi un email</p>
                             </a>
-
+                            <!-- Button Appel -->
                             <a class="btn-contact d-flex justify-content-center align-items-center btn rounded-pill scale my-2" href="tel:+33632024591" target="_blank" style="width: 242px;">
                                 <p class="me-2 mb-0" style="font-size: x-large;">
                                     <i class="fa-solid fa-phone"></i>
                                 </p>
                                 <p class="mb-0">Appelez-moi</p>
                             </a>
-
+                            <!-- Button Instagram -->
                             <a class="btn-contact d-flex justify-content-center align-items-center btn rounded-pill scale my-2" href="https://www.instagram.com/anneconsigli?igsh=YnVydzA0ZG5qY3ht" target="_blank" style="width: 242px;">
                                 <p class="me-2 mb-0" style="font-size: x-large;">
                                     <i class="fa-brands fa-square-instagram"></i>
                                 </p>
                                 <p class="mb-0">@anneconsigli</p>
                             </a>
-
+                            <!-- Button Google Map -->
                             <a class="d-flex justify-content-center align-items-center btn btn-map rounded-pill scale mt-4 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 <p class="me-2 mb-0" style="font-size: x-large;">
                                     <i class="bi bi-map"></i>
                                 </p>
                                 <p class="mb-0">Google Map</p>
                             </a>
+                            <!-- Texte Muted -->
                             <p class="small text-muted">
                                 <i class="fas fa-info-circle me-1"></i>Cliquez pour voir l'emplacement du studio
                               </p>
@@ -151,7 +135,7 @@
                 </div> 
             </main>
 
-            <!-- Modal -->
+            <!-- Modal Affichage Google Map-->
 
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -170,39 +154,51 @@
                 </div>
             </div>
 
-            <!-- <div class="min-vw-100">Min-width 100vw</div>
-            <div class="min-vh-100">Min-height 100vh</div>
-            <div class="vw-100">Width 100vw</div>
-            <div class="vh-100">Height 100vh</div> -->
-
+            <!-- Footer -->
             <footer class="row py-2 rose-beige">
                 <div class="container">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <!-- les logos footer -->
-                        <div style="width: auto; height: 60px;" >
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <!-- Logo gauche -->
+                        <div style="width: auto; height: 60px;">
                             <a class="d-flex h-100 justify-content-between align-items-center text-white" href="index.html">
                                 <img class="img-logo scale border-secondary rounded" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie_dore.png" alt="Logo">
                             </a>
                         </div>
+
+                        <!-- Mention légale au centre laptop -->
+                        <div class="small text-muted text-center mx-auto mt-2 mt-md-0 d-none d-lg-block">
+                            <p class="m-0">
+                                &copy; 2024 <strong>Aguens Company</strong> – Tous droits réservés.  
+                                <a class="email-link2 link-underline link-underline-opacity-0" href="mailto:ca.carre@gmail.com">ca.carre@gmail.com</a>
+                            </p>
+                        </div>
+
+                        <!-- Réseaux sociaux droite -->
                         <div class="d-flex column-gap-3">
-                            <!-- logo instagram -->
+                            <!-- Instagram -->
                             <a href="https://www.instagram.com/anneconsigli?igsh=YnVydzA0ZG5qY3ht" target="_blank">
                                 <p class="text-dark m-0 h-100" style="font-size: xx-large;">
                                     <i class="bi bi-instagram"></i>
                                 </p>
                             </a>
-    
-                            <!-- autre logo -->
+                            <!-- Mail -->
                             <a href="mailto:anne.consigli@orange.fr" target="_blank" class="d-flex align-items-center justify-content-center">
                                 <p class="text-dark m-0 h-100" style="font-size: xx-large;">
                                     <i class="bi bi-envelope-at"></i>
                                 </p>
                             </a>
                         </div>
+
+                        <!-- Mention légale au centre laptop smartphone-->
+                        <div class="small text-muted text-center mx-auto mt-2 mt-md-0 d-lg-none">
+                            <p class="m-0">
+                                &copy; 2024 <strong>Aguens Company</strong> – Tous droits réservés.  
+                                <a class="email-link2 link-underline link-underline-opacity-0" href="mailto:ca.carre@gmail.com">ca.carre@gmail.com</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </footer>
-        
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
