@@ -69,7 +69,7 @@ nav{
 /* menu burger responsive*/
     /* bg-mobile */
 .responsive-bg {
-    background-color: #a8a3ae64;
+    background-color: white;
     border-radius: 10px;
   }
     /* bg-tablet */ 
@@ -86,15 +86,29 @@ nav{
     }
 }
 /* couleur .nav-link et .nav-link.active */
-a.nav-link {
+/* lien menu */
+a.nav-link{
     color: #e8b666;
     font-weight: bold;
 }
 li a.nav-link:hover{
-    color: #c03b02;
-    transform: scale(1.1);
+    color: #c03b02 !important;
+    transform: scale(1.1) !important;
 }
 a.nav-link.active {
+    color: #c03b02 !important;
+    text-shadow: 1px 1px 1px #1F2039;
+}
+/* lien sous-menu */
+a.nav-link-2{
+    color: #e8b666;
+    font-weight: bold;
+}
+li a.nav-link-2:hover{
+    color: #c03b02 !important;
+    transform: scale(1.05) !important;
+}
+a.nav-link-2.active {
     color: #c03b02 !important;
     text-shadow: 1px 1px 1px #1F2039;
 }
