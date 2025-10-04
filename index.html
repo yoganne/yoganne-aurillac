@@ -290,9 +290,12 @@
                                             <i class="fas fa-calendar-check me-2"></i>1er cours gratuit
                                         </a>
                                         <!-- Buttons Echanger -->
-                                        <a class="btn text-dore border-dore px-4 py-2 rounded-pill" href="tel:+33632024591">
+                                        <a id="buttonSms" class="btn text-dore border-dore px-4 py-2 rounded-pill">
                                             <i class="fas fa-comments me-2"></i>Échanger
                                         </a>
+                                        <!-- <a class="btn text-dore border-dore px-4 py-2 rounded-pill" href="tel:+33632024591">
+                                            <i class="fas fa-comments me-2"></i>Échanger
+                                        </a> -->
                                     </div>
                                     <p class="mt-4 mb-0 text-muted fst-italic">Namaste 🙏 - Gratitude infinie, OM Shanti</p>
                                 </div>
@@ -308,7 +311,7 @@
                 const numero = "+33632024591";
                 const message = "Bonjour, avez-vous reçu mon message ?";
                 const url = `sms:${numero}?body=${encodeURIComponent(message)}`;
-                document.getElementById("btnSms").addEventListener("click", () => {
+                document.getElementById("buttonSms").addEventListener("click", () => {
                     window.location.href = url;
                 });
                 </script> -->
@@ -394,6 +397,16 @@
                 </div>
             </footer>
         </div>
+
+        <!-- Script button SMS -->
+        <script>
+            const numero = "+33632024591";
+            const message = "Bonjour, je vous contacte depuis votre site internet.";
+            const url = `sms:${numero}?body=${encodeURIComponent(message)}`;
+            document.getElementById("buttonSms").addEventListener("click", () => {
+                window.location.href = url;
+            });
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/200ea87a50.js" crossorigin="anonymous"></script>
