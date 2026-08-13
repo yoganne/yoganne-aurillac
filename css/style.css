@@ -12,6 +12,10 @@
     color: #be572a;
 }
 
+.text-rouge-flyer{
+    color: #c86c6c !important;;
+}
+
 .border-dore{
     border: 1px solid #e8b666 !important;
 }
@@ -27,6 +31,15 @@
 .bg-rouge-brique{
     /* background-color: #c03b02 !important; */
     background-color: #be572a !important;
+}
+
+/* a modifier */
+.bg-rose-flyer{
+    background-color: #fff4ec !important;
+}
+
+.bg-beige-pale{
+    background-color: #fed0ac; 
 }
 
 .bg-rose-pale{
@@ -209,6 +222,35 @@ table th{
     width: 2px;
     background: #4a6fa5;
     opacity: 0.3;
+}
+
+main {
+    padding-bottom: 80px;
+}
+
+/* arrow */
+.bouton-revenir-debut {
+    position: fixed;
+    right: max(20px, calc((100vw - 1140px) / 2 + 20px));
+    bottom: 30px;
+    z-index: 1050;
+}
+
+.btn-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 52px;
+    text-decoration: none;
+}
+
+/* Smartphone */
+@media (max-width: 575.98px) {
+    .bouton-revenir-debut {
+        right: 16px;
+        bottom: 20px;
+    }
 }
 
 /* Footer */

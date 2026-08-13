@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <!-- Encodage & Responsive -->
@@ -5,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Titre -->
-    <title>Information - Professeur de Yoga | Yog'Anne</title>
+    <title>Horaires et tarifs - Professeur de Yoga | Yog'Anne</title>
 
     <!-- Description SEO -->
     <meta name="description" content="Découvrez les cours de yoga doux et Yin Yoga à Aurillac avec Anne, professeure passionnée et bienveillante. Accessible à tous.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://yoganne-aurillac.fr/nos-pratiques.html">
+    <link rel="canonical" href="https://yoganne-aurillac.fr/information.html">
 
     <!-- Open Graph (Facebook, WhatsApp, etc.) -->
-    <meta property="og:title" content="Nos Pratiques - Yog'Anne à Aurillac">
+    <meta property="og:title" content="Horaires et tarifs - Yog'Anne à Aurillac">
     <meta property="og:description" content="Cours de yoga doux, Yin Yoga et relaxation avec Anne à Aurillac. Reconnectez-vous à votre souffle.">
     <meta property="og:image" content="https://yoganne-aurillac.fr/images/img_couleur/anne_meditation_portrait.jpg">
     <meta property="og:url" content="https://yoganne-aurillac.fr/information.html">
@@ -22,7 +23,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nos Pratiques - Yog'Anne à Aurillac">
+    <meta name="twitter:title" content="Horaires et tarifs - Yog'Anne à Aurillac">
     <meta name="twitter:description" content="Cours de yoga doux, Yin Yoga et relaxation avec Anne à Aurillac.">
     <meta name="twitter:image" content="https://yoganne-aurillac.fr/images/img_couleur/anne_meditation_portrait.jpg">
 
@@ -30,7 +31,7 @@
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
     <!-- CSS & Fonts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,10 +47,13 @@
         border-radius: 0 !important;
         transition: all 0.3s ease;
       }
-      .list-group-item:hover {
-        background-color: #e8b66625;
-        transform: translateX(5px);
+      @media (hover: hover) and (pointer: fine) {
+        .list-group-item:hover {
+          background-color: #e8b66625;
+          transform: translateX(5px);
+        }
       }
+      /* effet de tranlation vertical */
       .card {
         transition: transform 0.3s ease;
       }
@@ -67,50 +71,85 @@
           }
     </style>
   </head>
-  <body class="libre-baskerville-regular">
-    <div class="container-fluid d-flex flex-column min-vh-100">
-      <div class="row">
-        <header class="ctn-about col-lg-6 d-flex flex-column" id="haut">
-          <!-- menu navbar -->
-          <nav class="navbar navbar-expand-md fixed-top" >
-            <div class="container">
-              <!-- logo et Marque header-->
-              <div style="width: 200px; height: 70px;" class="align-self-start">
-                <a class="navbar-brand d-flex h-100 align-items-center text-white" href="index.html">
-                  <img class="img-logo scale shadow-md border border-1 border-secondary rounded me-3" style="height: 100%; --bs-border-opacity: .4;" src="images/logo/arbre_de_vie_dore.png" alt="Logo"> <!-- rounded-circle -->
-                  <p class="text-logo scale my-auto d-lg-block ms-3" style="display: none;">Yog'Anne</p>
-                </a>
-              </div>
-              <!-- Menu -->
-              <div class="d-flex flex-column" style="border-color: gray;">
-                <!-- button menu burger -->
-                <button class="navbar-toggler align-self-end fs-5 px-2 border border-secondary" data-bs-toggle="collapse"  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style=" color: gray;">                                    
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse responsive-bg" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item mx-3">
-                      <a href="index.html" class="nav-link scale">Accueil</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                      <a href="pratique.html" class="nav-link scale">Nos Pratiques</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                      <a href="information.html" class="nav-link active scale" aria-current="page">Horaires et Tarifs</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                      <a href="contact.html" class="nav-link  scale">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+  <body class="libre-baskerville-regular ">
+    <div class="container-fluid d-flex flex-column min-vh-100 px-0">
+      <header class="ctn-about d-flex flex-column" id="haut">
+        <!-- menu navbar -->
+        <nav class="navbar navbar-expand-md fixed-top">
+          <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center text-white"
+            href="index.html">
+
+              <img
+                class="img-logo scale shadow-md border border-1
+                    border-secondary rounded me-3"
+                style="height: 70px; --bs-border-opacity: .4;"
+                src="images/logo/arbre_de_vie_dore.png"
+                alt="Logo Yog'Anne">
+
+              <span class="text-logo scale d-none d-lg-block ms-3">
+                Yog'Anne
+              </span>
+            </a>
+
+            <!-- Bouton burger -->
+            <button
+              class="navbar-toggler fs-5 px-2 border border-secondary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Afficher le menu">
+
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div
+              class="collapse navbar-collapse responsive-bg"
+              id="navbarNavDropdown">
+
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-3">
+                  <a href="index.html" class="nav-link scale">
+                    Accueil
+                  </a>
+                </li>
+
+                <li class="nav-item mx-3">
+                  <a 
+                    href="pratique.html"
+                    class="nav-link scale">
+                    Nos Pratiques
+                  </a>
+                </li>
+
+                <li class="nav-item mx-3">
+                  <a 
+                    href="information.html" 
+                    class="nav-link active scale"
+                    aria-current="page">
+                    Horaires et Tarifs
+                  </a>
+                </li>
+
+                <li class="nav-item mx-3">
+                  <a href="contact.html" class="nav-link scale">
+                    Contact
+                  </a>
+                </li>
+              </ul>
             </div>
-          </nav>                                  
-        </header>               
-      </div>
-        
-        <!-- Contenu principal -->
-      <main class="row p-md-5 mb-5 mb-lg-0 flex-fill" id="work">      
+
+          </div>
+        </nav>                                 
+      </header>               
+       
+      <!-- Contenu principal -->
+      <main class="flex-fill p-md-5 mb-5 mb-lg-0" id="work" id="work">      
         <!-- section tarif + horaire -->
         <div class="container-horaire-tarif container d-flex flex-column justify-content-center mt-5 pt-5">
           <div class="row">
@@ -128,85 +167,286 @@
                       </div>
                       
                       <!-- Cours Réguliers -->
-                      <div class="row g-0">
-                        <!-- Titre -->
-                        <h4 class="h5 text-center mb-3 mt-3 fw-bold text-rouge-brique">
-                          <i class="fas fa-redo me-2"></i>Cours Réguliers
-                        </h4>
-                        <!-- block jours 1 -->
-                        <div class="col-md-6">
-                          <div class="p-3">
-                            <!-- Lundi -->
-                            <div class="mb-3">
-                              <div class="day-header bg-dore text-white p-2">
-                                <h5 class="mb-0 fw-bold">Lundi</h5>
+                      <div class="row g-0 m-lg-3 card border-0">
+                        <!-- image "laptop" -->
+                        <img class="rounded-2 d-lg-block d-none" src="images/img_couleur/planning yoganne paysage.png" alt="">
+                        <!-- Table Cours Réguliers format "Smartphone" -->
+                        <div class="row g-0 d-block d-lg-none">
+                          <!-- Titre -->
+                          <h4 class="h5 text-center mb-3 mt-3 fw-bold text-rouge-brique">
+                            <i class="fas fa-redo me-2"></i>Cours Réguliers
+                          </h4>
+                          <!-- block jours 1 -->
+                          <div class="col-lg-6">
+                            <div class="p-3">
+                              <!-- Lundi -->
+                              <div class="mb-3">
+                                <div class="day-header bg-dore text-white p-2">
+                                  <h5 class="mb-0 fw-bold">Lundi</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          10:30 - 11h45
+                                        </span>
+                                      </div>
+
+                                      <div class="col-auto">
+                                        <i class="fa-solid fa-sun text-dore"></i>
+                                      </div>
+
+                                      <div class="col">
+                                        Hatha Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          17:30 - 18h45
+                                        </span>
+                                      </div>
+
+                                      <div class="col-auto">
+                                        <i class="fa-solid fa-moon text-dore"></i>
+                                      </div>
+
+                                      <div class="col">
+                                        Yin Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          19:15 - 20:30
+                                        </span>
+                                      </div>
+
+                                      <div class="col-auto">
+                                        <i class="fa-solid fa-moon text-dore"></i>
+                                      </div>
+
+                                      <div class="col">
+                                        Yin Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
-                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span class="badge bg-danger rounded-pill me-2 bg-rouge-brique">10:30</span>
-                                  Hatha Yoga
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span class="badge bg-danger rounded-pill me-2 bg-rouge-brique">17:30</span>
-                                  Yin Yoga (1 semaine/2)
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- Mardi -->
-                            <div class="mb-3">
-                              <div class="day-header bg-dore text-white p-2">
-                                <h5 class="mb-0 fw-bold">Mardi</h5>
+                              <!-- Mardi -->
+                              <div class="mb-3">
+                                <div class="day-header bg-dore text-white p-2">
+                                  <h5 class="mb-0 fw-bold">Mardi</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          17:30 - 18h45
+                                        </span>
+                                      </div>
+    
+                                      <div class="col-auto">
+                                        <i class="fa-solid fa-sun text-dore"></i>
+                                      </div>
+    
+                                      <div class="col">
+                                        Hatha Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          19:15 - 20:30
+                                        </span>
+                                      </div>
+    
+                                      <div class="col-auto">
+                                        <i class="fa-solid fa-sun text-dore"></i>
+                                      </div>
+    
+                                      <div class="col">
+                                        Hatha Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
-                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span class="badge bg-danger rounded-pill me-2 bg-rouge-brique">17:30</span>
-                                  Hatha Yoga
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span class="badge bg-danger rounded-pill me-2 bg-rouge-brique">19:15</span>
-                                  Hatha Yoga
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- block jours 2 -->
-                        <div class="col-md-6">
-                          <div class="p-3">
-                            <!-- Mercredi -->
-                            <div class="mb-3">
-                              <div class="day-header bg-dore text-white p-2">
-                                <h5 class="mb-0 fw-bold">Mercredi</h5>
+                              <!-- Mercredi -->
+                              <div class="mb-3">
+                                <div class="day-header bg-dore text-white p-2">
+                                  <h5 class="mb-0 fw-bold">Mercredi</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          17:30 - 18h45
+                                        </span>
+                                      </div>
+        
+                                      <div class="col-auto">
+                                        <i class="fa-solid fa-moon text-dore"></i>
+                                      </div>
+        
+                                      <div class="col">
+                                        Yin Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          19:15 - 20:30
+                                        </span>
+                                      </div>
+        
+                                      <div class="col-auto">
+                                        <i class="fa-solid fa-sun text-dore"></i>
+                                      </div>
+        
+                                      <div class="col">
+                                        Hatha Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
-                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span class="badge bg-danger rounded-pill me-2 bg-rouge-brique">17:30</span>
-                                  Yin Yoga
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span class="badge bg-danger rounded-pill me-2 bg-rouge-brique">19:15</span>
-                                  Hatha Yoga
-                                </li>
-                              </ul>
-                            </div>
-                            <!-- Vendredi -->
-                            <div class="mb-3">
-                              <div class="day-header bg-dore text-white p-2">
-                                <h5 class="mb-0 fw-bold">Vendredi</h5>
+                              <!-- Jeudi -->
+                              <div class="mb-3">
+                                <div class="day-header bg-dore text-white p-2">
+                                  <h5 class="mb-0 fw-bold">Jeudi</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          10:30 - 11h30
+                                        </span>
+                                      </div>
+        
+                                      <div class="col-auto">
+                                        <i class="bi bi-bluesky text-dore"></i>
+                                      </div>
+        
+                                      <div class="col">
+                                        Fly Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          12:30 - 13h30
+                                        </span>
+                                      </div>
+        
+                                      <div class="col-auto">
+                                        <i class="bi bi-bluesky text-dore"></i>
+                                      </div>
+        
+                                      <div class="col">
+                                        Fly Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          16:30 - 17h30
+                                        </span>
+                                      </div>
+        
+                                      <div class="col-auto">
+                                        <i class="bi bi-bluesky text-dore"></i>
+                                      </div>
+        
+                                      <div class="col">
+                                        Fly Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          18:00 - 19h00
+                                        </span>
+                                      </div>
+        
+                                      <div class="col-auto">
+                                        <i class="bi bi-bluesky text-dore"></i>
+                                      </div>
+        
+                                      <div class="col">
+                                        Fly Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
-                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span class="badge bg-danger rounded-pill me-2 bg-rouge-brique">17:30</span>
-                                  Hatha Yoga
-                                </li>
-                              </ul>
+                              <!-- Vendredi -->
+                              <div class="mb-3">
+                                <div class="day-header bg-dore text-white p-2">
+                                  <h5 class="mb-0 fw-bold">Vendredi</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          12:30 - 13h30
+                                        </span>
+                                      </div>
+        
+                                      <div class="col-auto">
+                                        <i class="fa-solid fa-sun text-dore"></i>
+                                      </div>
+        
+                                      <div class="col">
+                                        Hatha/Yin Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-auto">
+                                        <span class="badge rounded-pill bg-rouge-brique" style="width: 100px;">
+                                          17:30 - 18h45
+                                        </span>
+                                      </div>
+        
+                                      <div class="col-auto">
+                                        <i class="fa-solid fa-sun text-dore"></i>
+                                      </div>
+        
+                                      <div class="col">
+                                        Hatha Yoga
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                       
                       <!-- Ateliers Spéciaux -->
-                      <div class="border-top pt-3" style="background-color: #f8f9fa;">
+                      <div class="border-top py-3" style="background-color: #f8f9fa;">
                         <!-- Titre -->
                         <h4 class="h5 text-center mb-3 fw-bold text-success-emphasis">
                           <i class="fas fa-star me-2"></i>Ateliers Spéciaux
@@ -256,24 +496,92 @@
 
             <!-- Tarifs -->
             <div class="container text-center mt-4">
-              <div class="row  ">
-                <div class="col-lg-4 col-10 mx-auto">
+              <div class="row">
+                <div class="col-lg-8 col-10 mx-auto">
                   <div class="card shadow-sm border-0 overflow-hidden">
                     <div class="card-body p-0 rounded-4">
-
-                      <h3 class="text-dore p-4 mb-0" style="background-color: #f8f9fa;">TARIF :</h3>
-                      <div class="bg-white">
-                        <div class="PriceByClass p-4">
-                          <p>Cours à l'unité :<span class="prix"> 10€</span></p>
-                          <p>Cours d'essai :<span class="prix"> Gratuit</span></p>
+                      <!-- titre -->
+                      <div class="text-center text-rouge-flyer py-4 mx-auto mb-2" style="background-color: #f8f9fa;">
+                        <h3 class="fw-bold mb-0">
+                          <i class="bi bi-ticket-detailed-fill me-2"></i>TARIF DES<br> COURS
+                        </h3>
+                      </div>
+                      <div class="row mb-0">
+                        <!-- 1 cours -->
+                        <div class="col-md-4">
+                          <div class="card mb-3 ms-md-2 border-dore">
+                            <div class="card-header bg-beige-pale text-rouge-flyer">
+                              <h5 class="mb-0 fw-bold">1 cours (Hatha ou Yin)</h5>
+                            </div>
+                            <div class="card-body bg-rose-flyer text-success-emphasis">
+                              <ul>
+                                <li>
+                                  <p class="text-start">
+                                    <span class="prix"> 13€</span> l'unité 
+                                  </p>
+                                </li>
+                                <li>
+                                  <p class="text-start">
+                                    <span class="prix">125€</span> carte de 10 séances(soit 12,50€ la séance) 
+                                  </p>
+                                </li>
+                                <li>
+                                  <p class="text-start">
+                                    Au forfait<span class="prix"> 144€</span> le trimestre (soit 12€ la séance, base de 12 semaines par trimestre) 
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                      </div>  
-                      <h4 class="p-4 text-dore mb-0" style="background-color: #f8f9fa;">A LA CARTE :</h4>
-                      <div class="bg-white">
-                        <div class="PriceByClass p-4">
-                          <p>Carte de 10 séances :<span class="prix"> 95€</span></p>
+                        <!-- 2 cours -->
+                        <div class="col-md-4">
+                          <div class="card mb-3 ms-md-2 border-dore">
+                            <div class="card-header bg-beige-pale text-rouge-flyer">
+                              <h5 class="mb-0 fw-bold text-center">2 cours (Hatha ou Yin)</h5>
+                            </div>
+                            <div class="card-body bg-rose-flyer text-success-emphasis">
+                              <ul>
+                                <li>
+                                  <p class="text-start">
+                                    Au forfait<span class="prix"> 280€</span> (soit 11.66€ l'unité)
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 1 cours -->
+                        <div class="col-md-4">
+                          <div class="card mb-3 ms-md-2 border-dore me-md-2">
+                            <div class="card-header bg-beige-pale text-rouge-flyer">
+                              <h5 class="mb-0 fw-bold">Fly Yoga</h5>
+                            </div>
+                            <div class="card-body bg-rose-flyer text-success-emphasis">
+                              <ul>
+                                <li>
+                                  <p class="text-start">
+                                    <span class="prix"> 15€</span> l'unité 
+                                  </p>
+                                </li>
+                                <li>
+                                  <p class="text-start">
+                                    carte de 10 cours : <span class="prix">140€</span>
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
+                      <!-- message muted -->
+                      <div class="text-center my-3">
+                        <small class="text-muted">
+                          <i class="fas fa-info-circle me-1"></i>
+                          Payable en 1, 2, 3 ou 4 fois.
+                        </small>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -283,17 +591,16 @@
           </div>
         </div>
       </main>
-      <!-- flêche de retour en haut -->  
-      <div class="container-fluid bouton-revenir-debut sticky-bottom d-flex justify-content-end mb-5 mx-0 px-0" >
-        <a href="#haut" class="btn-arrow rounded text-dore p-2 border bg-rouge-brique bg-white border-1">
-          <p class=" mb-0">
-            <i class="fa-solid fa-arrow-up-long"></i>
-          </p>
-        </a>
+      <!-- flêche de retour on top -->
+      <div class="bouton-revenir-debut">
+          <a href="#haut"
+          class="btn-arrow rounded text-dore p-2 border bg-rouge-brique">
+              <i class="fa-solid fa-arrow-up-long"></i>
+          </a>
       </div>
     
       <!-- Footer -->
-      <footer class="row py-2 rose-beige">
+      <footer class="py-2 rose-beige">
           <div class="container">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
                   <!-- Logo gauche -->
@@ -304,7 +611,7 @@
                   </div>
 
                   <!-- Mention légale au centre laptop -->
-                  <div class="small text-muted text-center mx-auto mt-2 mt-md-0 d-none d-lg-block">
+                  <div class="small text-muted text-center mx-auto mt-2 mt-md-0 d-none d-md-block">
                       <p class="m-0">
                           &copy; 2024 <a class="email-link2 link-underline link-underline-opacity-0" href="mailto:ca.carre@gmail.com"><strong>Aguens WebDesign</strong></a> – Tous droits réservés.
                       </p>
@@ -327,7 +634,7 @@
                   </div>
 
                   <!-- Mention légale au centre laptop smartphone-->
-                  <div class="small text-muted text-center mx-auto mt-2 mt-md-0 d-lg-none">
+                  <div class="small text-muted text-center mx-auto mt-2 mt-md-0 d-md-none">
                       <p class="m-0">
                           &copy; 2024 <a class="email-link2 link-underline link-underline-opacity-0" href="mailto:ca.carre@gmail.com"><strong>Aguens WebDesign</strong></a> – Tous droits réservés.
                       </p>
@@ -340,5 +647,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/200ea87a50.js" crossorigin="anonymous"></script>
+
+    <!-- Script bouton retour -->
+    <script>
+      const boutonRetour = document.querySelector(".bouton-revenir-debut");
+      const footer = document.querySelector("footer");
+
+      const observer = new IntersectionObserver(([entry]) => {
+          boutonRetour.classList.toggle("d-none", entry.isIntersecting);
+      });
+
+      observer.observe(footer);
+    </script>
   </body>
 </html>
